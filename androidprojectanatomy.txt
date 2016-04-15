@@ -1,0 +1,69 @@
+Android Build structure:
+
+Project
+  .gradle
+    <version>2.10
+      taskArtifacts
+        cache.properties
+        cache.properties.lock
+        fileHashes.bin
+        fileSnapshots.bin
+        outputFileStates.bin
+        taskArtifacts.bin
+  .idea
+    copyright
+      profiles_settings.xml
+    libraries
+      ...more.xml <for imported classes>
+    .name
+    compiler.xml
+    encodings.xml
+    gradle.xml
+    misc.xml
+    modules.xml
+    runConfigurations.xml
+    workspace.xml
+  app
+    build <lots of folder i don't need...>
+      generated
+      intermediates
+      outputs
+      tmp
+    libs
+      <empty>
+    src <this is where stuff happens>
+      androidTest <auto-gen test>
+      main
+        java
+          layout
+          project
+            <java files for the project>
+        res
+          drawable
+          layout <diff configs have -somemod>
+            <insert xml for classes here>
+          menu
+            <toolbar xml goes here>
+          mipmap
+            <pictures for icons and such>
+          values <preset values>
+            colors.xml
+            dimens.xml
+            strings.xml
+            styles.xml
+        AndroidManifest.xml <all classes need to be listed here>
+      test
+    .gitignore
+    app.iml
+    build.gradle
+    proguard-rules.pro
+  build
+  gradle
+  .gitignore
+  build.gradle
+  Project.iml
+  gradle.properties
+  gradlew
+  gradlew.bat
+  local.properties
+  settings.gradle
